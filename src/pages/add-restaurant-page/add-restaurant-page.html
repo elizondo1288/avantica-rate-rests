@@ -1,0 +1,60 @@
+<!--
+  Generated template for the AddRestaurantPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+        Add a Restaurant
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Add a Restaurant
+    </ion-card-header>
+    <ion-card-content>
+      <p>You can add a restaurant here</p>
+    </ion-card-content>  
+  </ion-card>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input [(ngModel)]="title"></ion-input>
+      </ion-item>
+ 
+      <ion-item>
+        <ion-label>Description</ion-label>
+        <ion-input [(ngModel)]="description"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Type</ion-label>
+        <ion-select [(ngModel)]="restaurant_type">
+          <ion-option value="Meat">Meats</ion-option>
+          <ion-option value="Asian">Asian</ion-option>
+          <ion-option value="Vegetarian">Vegetarian</ion-option>
+          <ion-option value="Italian">Italian</ion-option>
+          <ion-option value="Greek">Greek</ion-option>
+          <ion-option value="Other">Other</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <ion-input [(ngModel)]="address"></ion-input>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+   <button full ion-button color="primary" (click)="saveRestaurant()">Save</button> 
+</ion-footer>

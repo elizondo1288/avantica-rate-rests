@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle icon-only>
+            <ion-icon name='menu'></ion-icon>
+        </button>
+        <ion-title>
+            Rate a Restaurant
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="addRestaurant()"> 
+                <ion-icon name="add-circle">
+                </ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card *ngFor="let rest of items" (click)="viewRestaurant(rest)" color="primary">
+    <div *ngIf="isNotNull(rest)">  
+        <img src="assets/img/{{rest.restaurant_type}}.jpg"/>
+        <div class="card-title">{{rest.title}}</div>
+        <ion-item>
+        <ion-icon ios="logo-apple" md="logo-android" item-left></ion-icon>
+        <p><b>{{rest.address}}</b></p>
+        <p>{{rest.restaurant_type}}</p>
+        </ion-item>
+    </div>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,57 @@
+<!--
+  Generated template for the ItemDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-fab top right edge>
+    <button ion-fab color="vibrant" mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-card class="specialCard">
+    <img src="assets/img/{{restaurant_type}}.jpg"/>
+    <ion-card-header>
+      Rating: {{generalRating}}
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{description}}</p>
+      <b> {{address}}</b>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-list inset>
+      <ion-list-header>
+        List of Comments:
+      </ion-list-header>
+      <ion-item *ngFor="let comment of comments" text-wrap>
+        <ion-icon ios="ios-contact" md="md-contact" item-left></ion-icon>
+        <h3>Rating: {{comment.rating}}</h3>
+        <p>{{comment.comment}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+  
+</ion-content>
+
+ <ion-footer>
+    <button ion-item color="primary" (click)="addComment(title)">
+      <ion-icon ios="ios-chatbubbles" md="md-chatbubbles" item-right></ion-icon>
+        Rate the restaurant
+      </button>
+</ion-footer>
+

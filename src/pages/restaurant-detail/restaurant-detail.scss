@@ -1,0 +1,16 @@
+page-restaurant-detail {
+
+    .specialCard, .specialCard p{
+        color: #FFFFFF;
+        background-color: map-get($colors , primary );
+        border-radius: 20px;
+    }
+
+    .specialCard ion-card-header {
+        position: absolute;
+        top: 3%;
+        color: gold;
+        text-align: center;
+        font-size: 1.5em;
+    } 
+}
