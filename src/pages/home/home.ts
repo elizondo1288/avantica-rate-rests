@@ -5,9 +5,6 @@ import { ModalController, NavController } from 'ionic-angular';
 import { AddRestaurantPage } from '../add-restaurant-page/add-restaurant-page';
 import { RestaurantDetailPage } from '../restaurant-detail/restaurant-detail';
 
-//Entities
-import { Restaurant } from '../../entities/restaurant';
-
 //Providers
 import { RestaurantService } from '../../providers/restaurant.service';
 

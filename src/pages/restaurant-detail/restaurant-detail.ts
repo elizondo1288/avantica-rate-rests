@@ -9,7 +9,6 @@ import { AddCommentPage } from '../add-comment/add-comment';
 
 //Services
 import { RestaurantService } from '../../providers/restaurant.service';
-import { RestaurantComment} from '../../entities/restaurant-comment';
 
 /*
   Generated class for the RestaurantDetail page.
