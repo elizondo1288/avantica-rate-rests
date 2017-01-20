@@ -240,6 +240,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = DLWB6ZX2PL;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "avantica-rate-rests" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -346,6 +351,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = DLWB6ZX2PL;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -354,7 +360,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "avantica-rate-rests/avantica-rate-rests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ionicframework.avanticaraterests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.avantica.poc.ratearest;
 				PRODUCT_NAME = "avantica-rate-rests";
 			};
 			name = Debug;
@@ -369,12 +375,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = DLWB6ZX2PL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "avantica-rate-rests/avantica-rate-rests-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "avantica-rate-rests/avantica-rate-rests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ionicframework.avanticaraterests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.avantica.poc.ratearest;
 				PRODUCT_NAME = "avantica-rate-rests";
 			};
 			name = Release;
